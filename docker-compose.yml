@@ -1,0 +1,13 @@
+version: "3"
+services:
+
+  ubuntu:
+    build: 
+      context: ./ubuntu
+    volumes:
+      - data:/var/lib/postgresql/data
+    ports:
+      - "80:80"
+
+volumes:
+  data:
